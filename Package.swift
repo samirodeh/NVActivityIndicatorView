@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "NVActivityIndicatorViewExtended", targets: ["NVActivityIndicatorViewExtended"])
     ],
     targets: [
-        .target(name: "NVActivityIndicatorView", path: "Sources/Base"),
+        .target(name: "NVActivityIndicatorView", path: "Sources/Base" , exclude: ["Example", "Tests"]),
         .target(name: "NVActivityIndicatorViewExtended",
                 dependencies: ["NVActivityIndicatorView"],
                 path: "Sources/Extended")
